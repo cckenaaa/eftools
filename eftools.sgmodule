@@ -3,9 +3,5 @@
 #!category=Enhancement
 
 
-[Map Local]
-^https?:\/\/mobads\.baidu\.com\/cpro\/ui\/mads\.php$ header="content-type: application/json" data-type=text data='{"ad":[],"n":0,"error_code":0}'
-
-
-[MITM]
-hostname = %APPEND% mobads.baidu.com
+[Rule]
+DOMAIN,mobads.baidu.com,REJECT,pre-matching,extended-matching
