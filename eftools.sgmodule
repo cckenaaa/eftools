@@ -10,5 +10,8 @@ DOMAIN,mi.gdt.qq.com,REJECT,pre-matching,extended-matching
 DOMAIN,mobads.baidu.com,REJECT,pre-matching,extended-matching
 DOMAIN,open.e.kuaishou.com,REJECT,pre-matching,extended-matching
 DOMAIN,sdk.adx.adwangmai.com,REJECT,pre-matching,extended-matching
+DOMAIN,sdk-track.66mobi.com,REJECT,pre-matching,extended-matching
 DOMAIN,toblog.ctobsnssdk.com,REJECT,pre-matching,extended-matching
 DOMAIN-SUFFIX,anythinktech.com,REJECT,pre-matching,extended-matching
+DOMAIN-SUFFIX,tuia.cn,REJECT,pre-matching,extended-matching
+DOMAIN-SUFFIX,umeng.com,REJECT,pre-matching,extended-matching
