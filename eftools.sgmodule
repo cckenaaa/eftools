@@ -4,4 +4,8 @@
 
 
 [Rule]
+DOMAIN,adservice.sigmob.cn,REJECT,pre-matching,extended-matching
+DOMAIN,mi.gdt.qq.com,REJECT,pre-matching,extended-matching
 DOMAIN,mobads.baidu.com,REJECT,pre-matching,extended-matching
+DOMAIN,open.e.kuaishou.com,REJECT,pre-matching,extended-matching
+DOMAIN,sdk.adx.adwangmai.com,REJECT,pre-matching,extended-matching
