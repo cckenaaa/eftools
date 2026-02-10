@@ -11,4 +11,4 @@ DOMAIN,mobads.baidu.com,REJECT,pre-matching,extended-matching
 DOMAIN,open.e.kuaishou.com,REJECT,pre-matching,extended-matching
 DOMAIN,sdk.adx.adwangmai.com,REJECT,pre-matching,extended-matching
 DOMAIN,toblog.ctobsnssdk.com,REJECT,pre-matching,extended-matching
-DOMAIN_SUFFIX,anythinktech.com,REJECT,pre-matching,extended-matching
+DOMAIN-SUFFIX,anythinktech.com,REJECT,pre-matching,extended-matching
