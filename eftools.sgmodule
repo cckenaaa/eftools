@@ -1,3 +1,7 @@
 #!name=eFHUB 增强
 #!desc=eFHUB 去广告
 #!category=Enhancement
+
+
+[Map Local]
+^https:\/\/mobads\.baidu\.com\/cpro\/ui\/mads\.php$ header="content-type: application/json" data-type=text data='{"ad":[],"n":0,"error_code":0}'
