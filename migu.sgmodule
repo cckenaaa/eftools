@@ -1,0 +1,33 @@
+name: "咪咕视频去广告"
+desc: "去除咪咕视频App广告，精简导航栏和个人中心"
+
+mitm:
+  hostnames:
+    - "*.miguvideo.com"
+    - "*.migu.cn"
+
+url_rewrites:
+  - match: "https://.*miguvideo\\.com/request/sdk"
+    action: reject
+  - match: "https://.*miguvideo\\.com/deliver/site/batchMatch/mergeSpot/miguvideo"
+    action: reject
+
+body_rewrites:
+  - response_jq:
+      match: "https://.*miguvideo\\.com/recommend-dynamic/dataSource/v\\d/recommend"
+      filter: '.body.data = []'
+  - response_jq:
+      match: "https://.*migu\\.cn/search/hotword"
+      filter: '.body = {}'
+
+scriptings:
+  - http_response:
+      name: "咪咕视频-导航栏"
+      match: "https://.*miguvideo\\.com/app-management/v\\d/staticcache/navigation-list/miguvideo/ios"
+      script_url: "https://raw.githubusercontent.com/cckenaaa/eftools/refs/heads/main/migu.ads.js"
+      body_required: true
+  - http_response:
+      name: "咪咕视频-个人中心"
+      match: "https://.*miguvideo\\.com/display/v\\d/static/PERSONAL_CENTER"
+      script_url: "https://raw.githubusercontent.com/cckenaaa/eftools/refs/heads/main/migu.ads.js"
+      body_required: true
